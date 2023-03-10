@@ -5,7 +5,7 @@ let previousOperator;
 const screen = document.querySelector('.screen');
 
 function buttonClick(value){
-    if(isNan(value)){
+    if(isNaN(value)){
         handleSymbol(value);
     }
     else{
@@ -33,7 +33,7 @@ function handleSymbol(symbol){
             if(buffer.length ===1){
                 buffer = '0';
             }else{
-                buffer = buffer.toString(0, buffer.length - 1);
+                buffer = buffer.substring(0, buffer.length - 1);
             }
             break;
         case '+':
@@ -84,7 +84,7 @@ function handleNumber(numberString){
 }
 
 function init(){
-        document.querySelector('calc-buttons').addEventListener('click', function(event){
+        document.querySelector('.calc-buttons').addEventListener('click', function(event){
             buttonClick(event.target.innerText);
         })
 }
