@@ -15,7 +15,7 @@ body{
     align-items: center;
     background: linear-gradient(320deg, #530850, #cc4dcc, #ffffff);
     display: flex;
-    font-family: 'Dosis', 'sans-serif';
+    font-family: 'Dosis', sans-serif;
     font-display: swap;
     height: inherit;
     justify-content: center;
@@ -86,6 +86,10 @@ body{
 .calc-button:last-child:hover{
     background-color: inherit;
     color: inherit;
+}
+
+.calc-button:last-child:active{
+    background-color: #ff3f78;
 }
 
 .calc-button:hover{
